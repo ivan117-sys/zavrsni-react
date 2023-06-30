@@ -1,0 +1,25 @@
+.ispis__container {
+  height: 40rem;
+  width: 40rem;
+}
+
+.list__container {
+  color: #333;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+
+.avatar {
+  height: 40%;
+  width: 40%;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}

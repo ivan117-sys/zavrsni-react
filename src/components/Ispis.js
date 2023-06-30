@@ -7,17 +7,14 @@ function Ispis({ username }) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch(`https://api.github.com/users/${username}`, {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer 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`,
-        },
-      });
+      const result = await fetch(`https://api.github.com/users/${username}`);
       const jsonResult = await result.json();
       setData(jsonResult);
     };
     fetchData();
   }, [username]);
+
+  console.log(username);
 
   return (
     <div className="ispis__container">

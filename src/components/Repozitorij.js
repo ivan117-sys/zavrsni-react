@@ -7,13 +7,7 @@ function Repozitorij({ username }) {
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(
-        `https://api.github.com/users/${username}/repos`,
-        {
-          method: "GET",
-          headers: {
-            Authorization: `  Bearer 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`,
-          },
-        }
+        `https://api.github.com/users/${username}/repos`
       );
       const jsonResult = await result.json();
       setData(jsonResult);
